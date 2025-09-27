@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css\head.min.css">
     <link rel="stylesheet" href="css\main.min.css">
     <link rel="stylesheet" href="css\styles.min.css">
+
 </head>
 
 <body id="creatio">
@@ -21,52 +22,53 @@
         <ul>
             <li class="tehnic_bar_spis">
                 <div class="tehnic_bar_spis_osn"><img class="tehnic_bar_img" src="assets\servise_catalog.png" alt="">
-                    <button class="tehnic_bar_button">Сервисный каталог портала</button>
+                    <button class="tehnic_bar_button"><a class="link" href="404.html">Сервисный каталог
+                            портала</a></button>
                 </div>
             </li>
             <li class="tehnic_bar_spis">
                 <div class="tehnic_bar_spis_osn"><img class="tehnic_bar_img" src="assets\window.png" alt="">
-                    <button class="tehnic_bar_button">Единое окно</button>
+                    <button class="tehnic_bar_button"><a class="link" href="404.html">Единое окно</a></button>
                 </div>
             </li>
             <li class="tehnic_bar_spis">
                 <div class="tehnic_bar_spis_osn"><img class="tehnic_bar_img" src="assets\documents.png" alt="">
-                    <button class="tehnic_bar_button">Контрагенты</button>
+                    <button class="tehnic_bar_button"><a class="link" href="404.html">Контрагенты</a></button>
                 </div>
             </li>
             <li class="tehnic_bar_spis">
                 <div class="tehnic_bar_spis_osn"><img class="tehnic_bar_img" src="assets\contacts.png" alt="">
-                    <button class="tehnic_bar_button">Контакты</button>
+                    <button class="tehnic_bar_button"><a class="link" href="404.html">Контакты</a></button>
                 </div>
             </li>
             <li class="tehnic_bar_spis">
                 <div class="tehnic_bar_spis_osn"><img class="tehnic_bar_img" src="assets\obraschenie.png" alt="">
-                    <button class="tehnic_bar_button">Обращения</button>
+                    <button class="tehnic_bar_button"><a class="link" href="404.html">Обращения</a></button>
                 </div>
             </li>
             <li class="tehnic_bar_spis">
                 <div class="tehnic_bar_spis_osn"><img class="tehnic_bar_img" src="assets\narady.png" alt="">
-                    <button class="tehnic_bar_button">Наряды</button>
+                    <button class="tehnic_bar_button"><a class="link" href="404.html">Наряды</a></button>
                 </div>
             </li>
             <li class="tehnic_bar_spis">
                 <div class="tehnic_bar_spis_osn"><img class="tehnic_bar_img" src="assets\active.png" alt="">
-                    <button class="tehnic_bar_button">Активности</button>
+                    <button class="tehnic_bar_button"><a class="link" href="404.html">Активности</a></button>
                 </div>
             </li>
             <li class="tehnic_bar_spis">
                 <div class="tehnic_bar_spis_osn"><img class="tehnic_bar_img" src="assets\base znany.png" alt="">
-                    <button class="tehnic_bar_button">База знаний</button>
+                    <button class="tehnic_bar_button"><a class="link" href="404.html">База знаний</a></button>
                 </div>
             </li>
             <li class="tehnic_bar_spis">
                 <div class="tehnic_bar_spis_osn"><img class="tehnic_bar_img" src="assets\type.png" alt="">
-                    <button class="tehnic_bar_button">Типы запросов</button>
+                    <button class="tehnic_bar_button"><a class="link" href="404.html">Типы запросов</a></button>
                 </div>
             </li>
             <li class="tehnic_bar_spis">
                 <div class="tehnic_bar_spis_osn"><img class="tehnic_bar_img" src="assets\problem.png" alt="">
-                    <button class="tehnic_bar_button">Проблемы</button>
+                    <button class="tehnic_bar_button"><a class="link" href="404.html">Проблемы</a></button>
                 </div>
             </li>
         </ul>
@@ -74,16 +76,24 @@
     <div id="main">
         <section id="main_head">
             <div id="main_head_1">
-                <div >
-                    <input type="text" placeholder="Что я могу для вас сделать?" name="search_obsh" style="width: 180px;">
+                <div>
+                    <input type="text" placeholder="Что я могу для вас сделать?" name="search_obsh"
+                        style="width: 180px;">
                 </div>
                 <img id="logo" src="assets/logo.png" alt="">
                 <p style="font-size: 10px;">7.15.4.3055</p>
             </div>
         </section>
         <section>
-            <h1>Каталог сервисов</h1>
-            <input type="search" style="width: 600px;" placeholder="Введите необходимый сервис">
+            <h1 style="font-size: 25px; color: #0c0482;">Каталог сервисов</h1>
+            <div style="display: flex; flex-direction: row; gap: 5px;">
+                <input type="search" style="width: 600px; height: 25px;" placeholder="Введите необходимый сервис">
+                <button class="search_button">
+                    <a href="/">
+                        <img src="assets\problem.png" alt="" class="search_button_img">
+                    </a>
+                </button>
+            </div>
         </section>
         <section>
             <div>
@@ -102,18 +112,56 @@
         <section>
             <h2>Список групп сервисов</h2>
             <div class="mainBody">
-                <button class="mainBody_button">Программное обеспечение</button>
-                <button class="mainBody_button">Доступы</button>
-                <button class="mainBody_button">Поддержка рабочих мест</button>
-                <button class="mainBody_button">Ресурсы CI/CD Платформы</button>
-                <button class="mainBody_button">АС ДОМ.РФ</button>
-                <button class="mainBody_button">Новый ДО</button>
-                <button class="mainBody_button">АС Банк ДОМ.РФ</button>
-                <button class="mainBody_button">АХО</button>
+                <button class="mainBody_button" id="btn1">
+                    Программное обеспечение
+                    <div id="count1" style="align-self: flex-end; padding-bottom: 15px;">0</div>
+                </button>
+                <button class="mainBody_button" id="btn2">
+                    Доступы
+                    <div id="count2" style="align-self: flex-end; padding-bottom: 15px;">0</div>
+                </button>
+                <button class="mainBody_button" id="btn3">
+                    Поддержка рабочих мест
+                    <div id="count3" style="align-self: flex-end; padding-bottom: 15px;">0</div>
+                </button>
+                <button class="mainBody_button" id="btn4">
+                    Ресурсы CI/CD Платформы
+                    <div id="count4" style="align-self: flex-end; padding-bottom: 15px;">0</div>
+                </button>
+                <button class="mainBody_button" id="btn5">
+                    АС ДОМ.РФ
+                    <div id="count5" style="align-self: flex-end; padding-bottom: 15px;">0</div>
+                </button>
+                <button class="mainBody_button" id="btn6">
+                    Новый ДО
+                    <div id="count6" style="align-self: flex-end; padding-bottom: 15px;">0</div>
+                </button>
+                <button class="mainBody_button" id="btn7">
+                    АС Банк ДОМ.РФ
+                    <div id="count7" style="align-self: flex-end; padding-bottom: 15px;">0</div>
+                </button>
+                <button class="mainBody_button" id="btn8">
+                    АХО
+                    <div id="count8" style="align-self: flex-end; padding-bottom: 15px;">0</div>
+                </button>
             </div>
         </section>
-    </div>
+        <div id="modalForm" class="modal">
+            <div class="modal-content">
+                <h2>Создание заявки</h2>
+                <form id="requestForm">
+                    <label for="topic">Тема:</label>
+                    <input type="text" id="topic" name="topic" required>
 
+                    <label for="description">Описание:</label>
+                    <textarea id="description" name="description" required></textarea>
+
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="scripts\scripts.js"></script>
 </body>
 
 </html>
